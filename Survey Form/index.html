@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header classs="header">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill this survey form
+</p>
+</header>
+<form id="survey-form">
+    <fieldset>
+        <label id="name-label">Name <input type="text" id="name" required  placeholder="Enter your name"/></label>
+        <label id="email-label">Enter your email <input type="email" name="email" required placeholder="Enter your email"/></label>
+        <label id="number-email">Age<span>(optional)</span>  <input id="number" type="number" min="15" max="100" placeholder="Age"/></label>
+    
+    <label> Which option best describes your current role?
+    <select id="dropdown">
+    <option>Select current role</option>
+    <option>Student</option>
+    <option>Full time job</option>
+    <option>Full time learner</option>
+    <option>Prefer not to say</option>
+    <option>Other</option>
+    </select>
+    </label>
+    </fieldset>
+    <fieldset>
+        <label>How many years of programming experience do you have?</label>
+        <label><input type="radio" name="radio" class="inline" value="_1" />1-2 Years</label>
+        <label><input type="radio" name="radio" class="inline" value="_2" /> 3-5 years</label>
+        <label><input type="radio" name="radio" class="inline" value="_3" /> More than 5 Years </label>
+    
+    </fieldset>
+    <fieldset>
+    <label>What is your favorite programming field?
+    <select>
+        <option>Select an option</option>
+        <option>Front-end</option>
+        <option>Back-end</option>
+        <option>Full Stak</option>
+    </select>
+    </label>
+    </fieldset>
+    <fieldset>
+    <label>
+    What would you like learn from these options? (Check all that apply) </label>
+    <label><input class="inline" type="checkbox" value="1"/>  Front-end Projects</label>
+    <label><input class="inline" type="checkbox" value="2"/>  Back-end Projects</label>
+    <label> <input class="inline" type="checkbox" value="3"/> Data Visualization </label>
+    <label><input class="inline" type="checkbox" value="4"/>  Challenges</label>
+    <label><input class="inline" type="checkbox" value="5"/>  Open Source Community</label>
+<label><input class="inline" type="checkbox" value="6"/>  Gitter help rooms</label>
+<input class="inline" type="checkbox" value="7"/> Videos
+<label><input class="inline" type="checkbox" value="8"/> City meetups</label>
+<label><input class="inline" type="checkbox" value="9"/> Wiki</label>
+<label><input class="inline" type="checkbox" value="10"/> Forum</label>
+<label><input class="inline" type="checkbox" value="11"/> Additional courses</label>
+</fieldset>
+<fieldset>
+<label>Any comments or suggestions?
+    <textarea rows="4" cols="50">
+
+    </textarea> </label>
+    <input type="submit" id="submit"/>
+
+</fieldset>
+</form>
+</body>
+</html>
